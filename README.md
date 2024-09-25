@@ -1,18 +1,34 @@
+<!-- vscode-markdown-toc -->
+* 1. [`Rust`](#Rust)
+	* 1.1. [安装更新](#)
+* 2. [`Cargo`](#Cargo)
+	* 2.1. [安装更新](#-1)
+	* 2.2. [使用](#-1)
+	* 2.3. [发布（release）构建](#release)
+* 3. [参考](#-1)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
 <!--
  * @Author: matiastang
  * @Date: 2021-09-14 09:22:59
  * @LastEditors: matiastang
- * @LastEditTime: 2024-09-25 10:28:34
+ * @LastEditTime: 2024-09-25 10:41:02
  * @FilePath: /rust-learn/README.md
  * @Description: README
 -->
+
 # rust-learn
 
 `Rust`学习相关内容
 
-## `Rust`
+##  1. <a name='Rust'></a>`Rust`
 
-### 安装更新
+###  1.1. <a name=''></a>安装更新
 
 1. `Rust`安装
 
@@ -35,9 +51,9 @@ info: checking for self-update
 info: cleaning up downloads & tmp directories
 ```
 
-## `Cargo`
+##  2. <a name='Cargo'></a>`Cargo`
 
-### 安装更新
+###  2.1. <a name='-1'></a>安装更新
 
 1. `Cargo`安装
 
@@ -49,7 +65,7 @@ $ cargo --version
 cargo 1.81.0 (2dbb1af80 2024-08-20)
 ```
 
-### 使用
+###  2.2. <a name='-1'></a>使用
 
 * 创建项目
 ```sh
@@ -89,13 +105,13 @@ $ cargo check
 
 使用 `Cargo` 的一个额外的优点是，不管你使用什么操作系统，其命令都是一样的
 
-### 发布（release）构建
+###  2.3. <a name='release'></a>发布（release）构建
 
 当项目最终准备好发布时，可以使用 `cargo build --release` 来优化编译项目。这会在 `target/release` 而不是 `target/debug` 下生成可执行文件。这些优化可以让 `Rust` 代码运行的更快，不过启用这些优化也需要消耗更长的编译时间。这也就是为什么会有两种不同的配置：
 一种是为了开发，你需要经常快速重新构建；
 另一种是为用户构建最终程序，它们不会经常重新构建，并且希望程序运行得越快越好。如果你在测试代码的运行时间，请确保运行 `cargo build --release` 并使用 `target/release` 下的可执行文件进行测试。
 
-## 参考
+##  3. <a name='-1'></a>参考
 
 [Rust Github](https://github.com/rust-lang/rust)
 [Rust Learn](https://www.rust-lang.org/learn#learn-use)
